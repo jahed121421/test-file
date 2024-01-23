@@ -21,6 +21,7 @@ async function run() {
 
     const movies = client.db("movisData").collection("movies");
     const comment = client.db("movisData").collection("comment");
+
     app.get("/all-movie", async (req, res) => {
       const result = await movies.find().toArray();
       res.send(result);
