@@ -17,8 +17,7 @@ const client = new MongoClient(uri, {
 
 async function run() {
   try {
-    client.connect();
-
+    // client.connect();
     const movies = client.db("movisData").collection("movies");
     const comment = client.db("movisData").collection("comment");
 
